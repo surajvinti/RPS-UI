@@ -17,3 +17,21 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice());
+
+// Create function to get the user's choice
+// Prompts the user to enter their choice of eiter rock, paper
+// or scissors.
+function getHumanChoice() {
+    let humanChoice;
+    humanChoice = prompt("What's your choice?");
+
+    if (humanChoice !== "rock" || humanChoice !== "paper" || 
+        humanChoice !== "scissors") {
+        return;
+    }
+    else {
+        return humanChoice;
+    }
+}
+
+console.log(getHumanChoice());
