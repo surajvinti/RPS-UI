@@ -33,15 +33,6 @@ function getHumanChoice() {
     }
 }
 
-
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-console.log(computerSelection);
-
-playRound(humanSelection, computerSelection);
-
 // Create function to play an entire game (5 rounds)
 // Calls playRound 5 times
 function playGame() {
@@ -98,5 +89,37 @@ function playGame() {
             console.log(`The score is: ${humanScore}-${computerScore}`);
         }
     }
+    let round1Human = getHumanChoice();
+    let round1Computer = getComputerChoice();
+    playRound(round1Human, round1Computer);
+
+    let round2Human = getHumanChoice();
+    let round2Computer = getComputerChoice();
+    playRound(round2Human, round2Computer);
+
+    let round3Human = getHumanChoice();
+    let round3Computer = getComputerChoice();
+    playRound(round3Human, round3Computer);
+
+    let round4Human = getHumanChoice();
+    let round4Computer = getComputerChoice();
+    playRound(round4Human, round4Computer);
+
+    let round5Human = getHumanChoice();
+    let round5Computer = getComputerChoice();
+    playRound(round5Human, round5Computer);
+
+    console.log(`The final score is: ${humanScore}-${computerScore}`);
+
+    if (humanScore === computerScore) {
+        console.log("Tie game!")
+    }
+    else if (humanScore > computerScore) {
+        console.log("You are the winner!");
+    }
+    else {
+        console.log("You lost!");
+    }
 }
 
+playGame();
