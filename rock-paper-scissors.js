@@ -35,3 +35,9 @@ function getHumanChoice() {
 }
 
 console.log(getHumanChoice());
+
+// Declare variable for game score for the computer.
+let computerScore = 0;
+
+// Declare variable for game score for the user.
+let humanScore = 0;
